@@ -1,7 +1,7 @@
 const airlines_code = await fetch('./json/airlines.json')
     .then((response) => response.json())
     .then((json) => { return json; });
-//console.log("this is map we want-", airline_maps);
+
 const airline_maps = new Map(
     airlines_code.map(element => {
         return [element.iata, element.name];
