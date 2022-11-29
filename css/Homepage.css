@@ -1,0 +1,245 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: rgb(243, 224, 224);
+    width: 100%;
+    height:100%
+}
+.nav{
+    background-color: rgb(228, 103, 58);
+    width: 100%;
+    height:80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+.main_heading{
+    font-size: 30px;
+}
+.option{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.child{
+    width:100%;
+    text-align: center;
+}
+.child:hover{
+    background-color: #000;
+}
+
+
+.con1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* margin-top: 30px;
+     margin-right: 20px;
+     margin-left: 20px; */
+}
+.sideNav{
+    width: 90%;
+    margin-top:10px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+   
+}
+#airlines{
+    height: 40px;
+    line-height: 2;
+    background-color:rgb(228, 103, 58);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
+}
+#view
+{ 
+    width:100%;
+}
+.card{
+    margin: 25px 30px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+.flights-details{
+ margin: 10px;
+ width:100%;
+ font-size: 30px;
+ font-weight: 200;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.details{
+    width: 100%;
+    display: flex;
+    color: rgba(0, 0, 0, 0.547);
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 15px;
+}
+.stops_duration{
+    display: flex;
+    max-width: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 5px;
+    
+}
+.location{
+font-size:30px;
+font-style: bold;
+}
+.duration {
+   margin-bottom: 5px; 
+}
+.booking{
+    width:100%;
+    background-color:rgb(228, 103, 58);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    
+}
+/* .book{
+    font-size: 20px;
+}
+.price{
+    font-size: 25px;
+} */
+.form-container{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
+  input[type="checkbox"]{
+    display:none;
+  }
+  
+  input[type="checkbox"]:hover + label:before{
+    opacity: .5;
+  }
+  
+  .checkbox{
+    display:inline-block;
+    position:relative;
+    padding-left:40px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #111;
+    font-weight: 600;
+  }
+  
+  .checkbox:before{
+    z-index:15;
+    content: '';
+    position:absolute;
+    left:0;
+    top: 6px;
+    transition:all 0.3s ease;
+    cursor:pointer;
+    width:20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #444;
+    height:20px;
+  }
+  input[type="checkbox"]:checked + label{
+    color:#000;
+  }
+  
+  input[type="checkbox"]:checked +  label:before{
+    border-color: transparent;
+    border-left-color: #50ea1c;
+    border-bottom-color: #50ea1c;
+    transform:rotate(-50deg);
+    width:22px;
+    height:12px;
+    top: 3px;
+  }
+@media screen and (min-width:600px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main_heading{
+        width:fit-content;
+    }
+    .option{
+        height: 100%;
+        width:300px;
+        align-items: stretch;
+        line-height: 4;
+    }
+    
+    .main_heading{
+        margin-left: 40px;
+    }
+
+}
+@media screen and (min-width:700px) {
+ 
+    .card{
+    flex-direction: row;
+    align-items: stretch;
+    height:150px;
+}
+.flights-details
+{   padding-left: 30px;
+    width: 450px;
+    justify-content: flex-start;
+}
+.booking{
+    width: 512px;
+    margin-left: 50px;
+}
+}
+@media screen and (min-width:1000px)
+{  
+   .con1{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+   }
+   .sideNav{
+    width:30%;
+    margin-left:10px;
+    margin-top:25px;
+   }
+   #view{
+    width:70%
+   }
+}
+
