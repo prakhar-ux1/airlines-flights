@@ -1,0 +1,46 @@
+[
+  {
+    "iata": "TK",
+    "name": "Turkish Airlines"
+  },
+  {
+    "iata": "TF",
+    "name": "Malmo Aviation"
+  },
+  {
+    "iata": "EY",
+    "name": "Etihad Airways"
+  },
+  {
+    "iata": "BA",
+    "name": "British Airways"
+  },
+  {
+    "iata": "0A",
+    "name": "Amber Air"
+  },
+  {
+    "iata": "0B",
+    "name": "Blue Air"
+  },
+  {
+    "iata": "AI",
+    "name": "Air India"
+  },
+  {
+    "iata": "0D",
+    "name": "Darwin Airline"
+  },
+  {
+    "iata": "AA",
+    "name": "American Airlines"
+  },
+  {
+    "iata": "AU",
+    "name": "Austral Lineas Aereas"
+  },
+  {
+    "iata": "2B",
+    "name": "Aerocondor"
+  }
+]
